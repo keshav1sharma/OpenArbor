@@ -25,7 +25,7 @@ These instructions will get you a copy of the project up and running on your loc
 To install and run OpenArbor, you need to have Node.js and MongoDB installed on your machine. Then, follow these steps:
 
 1. Clone this repository: `git clone https://github.com/keshav1sharma/OpenArbor.git`
-2. Navigate to the project directory: `cd OpenArbor/OpenArbor_backend` and `cd cd OpenArbor/OpenArbor_frontend` for backend and frontend respectively.
+2. Navigate to the project directory: `cd OpenArbor/OpenArbor_backend` and `cd OpenArbor/OpenArbor_frontend` for backend and frontend respectively.
 3. Install the dependencies: `npm install`
 4. Start the server: `node index.js` on `PORT 5000`
 5. Start the client: `npm start`
