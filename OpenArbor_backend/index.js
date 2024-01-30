@@ -16,13 +16,12 @@ app.use(express.urlencoded({ extended: true }));
 
 // Connect to MongoDB
 mongoose.connect(
-    process.env.MONGO_URL,
-    { useNewUrlParser: true, useUnifiedTopology: true }
+    process.env.MONGO_URL
 ).then(() => console.log('MongoDB Connected'))
 .catch(err => console.log(err));
 
 // Routes
-app.get('/', (req, res) => {
+app.get('/', (req,res) => {
     res.send('Server is running.');
 });
 
@@ -33,5 +32,4 @@ app.use('/api/posts', postRoute);
 
 // Listen to port
 app.listen(port, () => console.log(`Server running on port http://localhost:${port}`));
-
 

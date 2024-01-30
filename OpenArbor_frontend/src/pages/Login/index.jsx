@@ -18,9 +18,9 @@ async function  loginUser(){
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
 
-    const existingUser = await axios.post("http://localhost:5000/api/auth/login", {username, password});
+    const existingUser = await axios.post("https://open-arbor-backend.onrender.com/api/auth/login", {username, password});
     console.log(existingUser.data);
-    if (existingUser) {
+    if (existingUser.data !== null) {
     isLoggedIn = true;
     username = existingUser.data.username;
     localStorage.setItem('username', JSON.stringify(username));
